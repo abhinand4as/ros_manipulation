@@ -11,6 +11,8 @@ find_package(catkin REQUIRED
              moveit_ros_planning_interface
              cmake_modules
              eigen_conversions
+	     rviz_visual_tools
+	     moveit_visual_tools
 )
 
 find_package(Boost REQUIRED system filesystem date_time thread)
@@ -43,6 +45,9 @@ add_executable(work_scene_dev src/work_scene_dev.cpp )
 target_link_libraries(work_scene_dev ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${kinova_driver_LIBRARIES})
 install(TARGETS work_scene_dev DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
+add_executable(mg_interface src/mg_interface.cpp )
+target_link_libraries(mg_interface ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${kinova_driver_LIBRARIES})
+install(TARGETS mg_interface DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})
