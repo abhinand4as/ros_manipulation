@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/glt0056/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/glt0056/catkin_ws/src/Azure_Kinect_ROS_Driver/include/**",
+                "/home/glt0056/catkin_ws/src/ros_essentials/client_server/include/**",
+                "/home/glt0056/catkin_ws/src/cv-pkgs/include/**",
+                "/home/glt0056/catkin_ws/src/husky/husky_base/include/**",
+                "/home/glt0056/catkin_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2n6s300_ikfast/include/**",
+                "/home/glt0056/catkin_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2s6s300_ikfast/include/**",
+                "/home/glt0056/catkin_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/j2s7s300_ikfast/include/**",
+                "/home/glt0056/catkin_ws/src/mtc_pkgs/jaco_demo/include/**",
+                "/home/glt0056/catkin_ws/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo/include/**",
+                "/home/glt0056/catkin_ws/src/kinova-ros/kinova_driver/include/**",
+                "/home/glt0056/catkin_ws/src/ros_manipulation/kinova_pick_place/include/**",
+                "/home/glt0056/catkin_ws/src/loam_velodyne/include/**",
+                "/home/glt0056/catkin_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins/ikfast/m1n6s300_ikfast/include/**",
+                "/home/glt0056/catkin_ws/src/moveit_task_constructor/core/include/**",
+                "/home/glt0056/catkin_ws/src/moveit_task_constructor/demo/include/**",
+                "/home/glt0056/catkin_ws/src/mtc_pkgs/mtc_examples/include/**",
+                "/home/glt0056/catkin_ws/src/mtc_pour/include/**",
+                "/home/glt0056/catkin_ws/src/ros_perception/octomap_tutorial/include/**",
+                "/home/glt0056/catkin_ws/src/pcl_pkgs/include/**",
+                "/home/glt0056/catkin_ws/src/moveit_task_constructor/rviz_marker_tools/include/**",
+                "/home/glt0056/catkin_ws/src/turtlebot3/turtlebot3_slam/include/**",
+                "/home/glt0056/catkin_ws/src/velodyne/velodyne_driver/include/**",
+                "/home/glt0056/catkin_ws/src/velodyne/velodyne_laserscan/include/**",
+                "/home/glt0056/catkin_ws/src/velodyne/velodyne_pointcloud/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
