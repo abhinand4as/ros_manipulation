@@ -1,0 +1,12 @@
+<launch>
+
+  <include file="$(find rrbot_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>
+
+  <include file="$(find rrbot_moveit_config)/launch/move_group.launch" />
+  
+  <!-- ros_control rrbot launch file -->
+  <include file="$(find rrbot_moveit_config)/launch/moveit_rviz.launch" />
+
+</launch>

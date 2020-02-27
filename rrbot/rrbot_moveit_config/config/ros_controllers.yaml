@@ -9,8 +9,8 @@ generic_hw_control_loop:
 # Settings for ros_control hardware interface
 hardware_interface:
   joints:
-    - single_rrbot_joint1
-    - single_rrbot_joint2
+    - rrbot_joint1
+    - rrbot_joint2
   sim_control_mode: 1  # 0: position, 1: velocity
 # Publish all joint states
 # Creates the /joint_states topic necessary in ROS
@@ -18,4 +18,10 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 controller_list:
-  []
+    - name: /rrbot/rrbot_controller
+      action_ns: follow_joint_trajectory
+      type: FollowJointTrajectory
+      default: true
+      joints: 
+        - rrbot_joint1     
+        - rrbot_joint2

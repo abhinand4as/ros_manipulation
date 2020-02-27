@@ -146,5 +146,3 @@ rrbot:
     - LazyPRMstar
     - SPARS
     - SPARStwo
-  projection_evaluator: joints(single_rrbot_joint1,single_rrbot_joint2)
-  longest_valid_segment_fraction: 0.005

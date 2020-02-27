@@ -11,7 +11,7 @@
 		<static>true</static>
 	</gazebo>
 
-	<xacro:rrbot parent="world" name="single_rrbot">
+	<xacro:rrbot parent="world" name="rrbot">
 		<origin xyz="0 0 0" rpy="0 0 0"/>
 	</xacro:rrbot>
 

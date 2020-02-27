@@ -188,6 +188,8 @@
     </inertial>
   </link>
 
+  <!-- Transmission Elements -->
+
   <transmission name="${name}_tran1">
     <type>transmission_interface/SimpleTransmission</type>
     <robotNamespace>${name}</robotNamespace>

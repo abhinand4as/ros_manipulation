@@ -8,10 +8,9 @@
 
     <!-- ros_control plugin -->
     <gazebo>
-      <plugin name="${name}_hw_sim_plugin" filename="librrbot_hw_sim_plugin.so">
+      <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
         <robotNamespace>${name}</robotNamespace>
-        <!-- add your custom sim behavior -->
-        <robotSimType>rrbot_hw/DefaultRRBOTHWSim</robotSimType>
+        <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
       </plugin>
     </gazebo>
 

@@ -1,0 +1,20 @@
+rrbot:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  rrbot_controller:
+    type: effort_controllers/JointTrajectoryController
+    joints: 
+        - rrbot_joint1
+        - rrbot_joint2
+    gains:
+        rrbot_joint1: {p: 100.0, i: 0.01, d: 10.0}  
+        rrbot_joint2: {p: 100.0, i: 0.01, d: 10.0}
+
+    constraints:
+        goal_time: 2.0
+
+    state_publish_rate: 25
