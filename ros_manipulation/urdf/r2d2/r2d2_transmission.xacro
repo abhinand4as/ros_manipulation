@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="r2d2_transmission" params="robot_name">
+
+        <!-- Gazebo plugin for ROS Control -->
+        <gazebo>
+            <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+            </plugin>
+        </gazebo>
+
+
+        
+        <transmission name="head_swivel_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="$head_swivel_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="head_swivel">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+
+        <transmission name="right_front_wheel_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="right_front_wheel_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="right_front_wheel_joint">
+            <hardwareInterface>VelocityJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+
+        <transmission name="right_back_wheel_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="right_back_wheel_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="right_back_wheel_joint">
+            <hardwareInterface>VelocityJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+
+        <transmission name="left_front_wheel_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="left_front_wheel_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="left_front_wheel_joint">
+            <hardwareInterface>VelocityJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+
+        <transmission name="left_back_wheel_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="left_back_wheel_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="left_back_wheel_joint">
+            <hardwareInterface>VelocityJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+
+        <transmission name="gripper_extension_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="gripper_extension_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="gripper_extension">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+
+        <transmission name="left_gripper_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="left_gripper_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="left_gripper_joint">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+
+        <transmission name="right_gripper_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <actuator name="right_gripper_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+            <joint name="right_gripper_joint">
+            <hardwareInterface>PositionJointInterface</hardwareInterface>
+            </joint>
+        </transmission>
+
+    </xacro:macro>
+</robot>
