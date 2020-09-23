@@ -21,21 +21,21 @@ rrbot:
           goal:       0.15
     state_publish_rate: 25
 
-# Individual Position Controllers ---------------------------------------
-# Allows to send individual ROS msg of Float64 to each joint separately
-joint1_position_controller:
-  type: position_controllers/JointPositionController
-  joint: rrbot_joint1
-  pid: {p: 100.0, i: 0.01, d: 10.0}
-joint2_position_controller:
-  type: position_controllers/JointPositionController
-  joint: rrbot_joint2
-  pid: {p: 100.0, i: 0.01, d: 10.0}
+  # Individual Position Controllers ---------------------------------------
+  # Allows to send individual ROS msg of Float64 to each joint separately
+  joint1_position_controller:
+    type: position_controllers/JointPositionController
+    joint: rrbot_joint1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint2_position_controller:
+    type: position_controllers/JointPositionController
+    joint: rrbot_joint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
 
-# Group Position Controllers ---------------------------------------
-# Allows to send single ROS msg of Float64MultiArray to all joints
-joint_position_controller:
-  type: position_controllers/JointGroupPositionController
-  joints:
-    - rrbot_joint1
-    - rrbot_joint2
+  # Group Position Controllers ---------------------------------------
+  # Allows to send single ROS msg of Float64MultiArray to all joints
+  joint_position_controller:
+    type: position_controllers/JointGroupPositionController
+    joints:
+      - rrbot_joint1
+      - rrbot_joint2
